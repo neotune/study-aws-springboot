@@ -29,6 +29,13 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'junit:junit:4.13.1'
+
+    // test 코드 작성시 컴파일 정상 작동을 위해 testImplementation 에 포함 해야 함
+    implementation 'org.projectlombok:lombok'
+    testImplementation 'org.projectlombok:lombok'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
