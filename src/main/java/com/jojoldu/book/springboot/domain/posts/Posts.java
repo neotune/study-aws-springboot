@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter // Entity 클래스에서는 Setter 메소드를 만들지 않음
 @NoArgsConstructor
 @Entity // 테이블과 링크될 클래스임을 나타내는 어노테이션
-public class Posts {
+public class Posts extends BaseTimeEntity { //생성시간, 수정시간 입력을 위한 상속
     @Id // 해당 테이블의 PK 필드를 나태나는 어노테이션
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK생성규칙, IDENTITY 옵션을 추가해야 auto increment가 됨
     private Long id;
@@ -27,6 +27,11 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 
 }
