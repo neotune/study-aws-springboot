@@ -38,6 +38,9 @@ dependencies {
     // chapter05 - 스프링 시큐리티와 OAuth 2.0으로 로그인 기능 구현하기
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
+    // chapter05.5 세션 저장소로 데이터베이스 사용하기
+    implementation 'org.springframework.session:spring-session-jdbc'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
 //    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
