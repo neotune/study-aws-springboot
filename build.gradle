@@ -41,8 +41,11 @@ dependencies {
     // chapter05.5 세션 저장소로 데이터베이스 사용하기
     implementation 'org.springframework.session:spring-session-jdbc'
 
-    // chpater05.7 기존 테스트에 시큐리티 적용하기
+    // chapter05.7 기존 테스트에 시큐리티 적용하기
     testImplementation 'org.springframework.security:spring-security-test'
+
+    // chapter08.4 스프링 부트 프로젝트로 RDS 접근하기
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
